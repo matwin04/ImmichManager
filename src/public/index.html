@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immich Statistics</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Immich Asset Statistics</h1>
+    <canvas id="immichChart"></canvas>
+    <script src="immich.js"></script>
+
+    <h2>Stats</h2>
+    <table id="statsTable">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Photos</td>
+                <td id="photoCount">-</td>
+            </tr>
+            <tr>
+                <td>Videos</td>
+                <td id="videoCount">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Albums</h2>
+    <button>Add Album</button>
+    <table id="albumTable">
+        <thead>
+            <tr>
+                <th>Album Name</th>
+                <th>Asset Count</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>
